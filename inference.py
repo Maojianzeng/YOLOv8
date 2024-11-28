@@ -1,6 +1,6 @@
 
 from ultralytics import YOLO
-from ultralytics.yolo.utils import DEFAULT_CONFIG, ROOT, ops
+from ultralytics.utils import ops
 from ultralytics.nn.tasks import  attempt_load_weights
 import os
 import cv2
@@ -8,12 +8,12 @@ import torch
 import numpy as np
 
 # model = YOLO("./runs/detect/train/weights/last.pt")  
-model = attempt_load_weights("./runs/detect/train/weights/last.pt")
+model = attempt_load_weights("/home/maojianzeng/Play_phone_detection/YOLOv8-main/runs/detect/train2/weights/best.pt")
 
 INPUT_W=640
 INPUT_H=640
 
-names = ["person","cat","dog","horse"]
+names = ["helmet","head"]
 
 # 前处理和YOLOv5相同
 def preprocess_image(image_path):
@@ -88,11 +88,11 @@ def postprocess(preds, img, orig_img):
 
 
 
-files = os.listdir("./test_img")
+files = os.listdir("helmet_dataset/images")
 
 for file in files:
     print(file)
-    img_path = os.path.join("./test_img",file)
+    img_path = os.path.join("helmet_dataset/images",file)
 
     image,image_raw,h,w = preprocess_image(img_path)
     input_ = torch.tensor(image)
@@ -113,12 +113,10 @@ for file in files:
 
             for *xyxy, conf, cls_ in det:   # x1,y1,x2,y2
 
-
                 # det_count += 1\
                 label_text = names[int(cls_)]
                 # print(conf.cpu().detach().numpy())
                 prob = round(conf.cpu().detach().numpy().item(),2)
-
 
 
                 # tl = line_thickness or round(0.002 * (img.shape[0] + img.shape[1]) / 2) + 1  # line/font thickness
@@ -139,14 +137,3 @@ for file in files:
                 if not os.path.exists("./detect_res"):
                     os.makedirs("./detect_res")
                 cv2.imwrite("./detect_res/"+file,image_raw)
-
-
-
-
-
-
-
-
-
-
-
