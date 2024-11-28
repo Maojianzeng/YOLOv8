@@ -2,23 +2,7 @@
 
 
 
-说明： 本项目支持YOLOv8的对应的package的版本是：[ultralytics-8.0.0](https://pypi.org/project/ultralytics/8.0.0/)
-
-### 1.YOLO的一些发展历史
-
-+ **YOLOv1：2015年Joseph Redmon和** **Ali Farhadi等** **人（华盛顿大学）**
-
-+ **YOLOv2：2016年Joseph Redmon\**和\**\**Ali Farhadi\**等人\**（华盛顿大学）\****
-
-+ [**YOLOv3**](http://mp.weixin.qq.com/s?__biz=MzUxNjcxMjQxNg==&mid=2247484179&idx=1&sn=c127ae5aac72f52ca7bb39d78512a190&chksm=f9a2719cced5f88a7d92ef5dbb1c010f957d539a3a6acafe85f1e4fa888a39f252ddb8154175&scene=21#wechat_redirect)**：2018年Joseph Redmon\**和\**\**Ali Farhadi\**等人\**（华盛顿大学）\****
-
-+ [**YOLOv4**](http://mp.weixin.qq.com/s?__biz=MzUxNjcxMjQxNg==&mid=2247498390&idx=1&sn=62ec5122def0ceb967761d628799a43b&chksm=f9a18819ced6010f325c7d9af1e96a110ab64fbb96c2a085d2073e799c16704ab86a0d10547a&scene=21#wechat_redirect)**：2020年Alexey Bochkovskiy和Chien-Yao Wang等人**
-
-+ [**YOLOv5**](http://mp.weixin.qq.com/s?__biz=MzUxNjcxMjQxNg==&mid=2247500275&idx=2&sn=a862a79afa87b5ce85fff8a6da6ab34a&chksm=f9a1b37cced63a6abf54e8a778189278bb9c14d2b3fe8f9d3d7ac403906bbf46ba21c179cc91&scene=21#wechat_redirect)**：2020年Ultralytics公司**
-
-+ **YOLOv6：2022年美团公司**
-
-+ [**YOLOv7**](http://mp.weixin.qq.com/s?__biz=MzUxNjcxMjQxNg==&mid=2247550919&idx=2&sn=884a1f6f2c969d67a4c532511b8240a9&chksm=f9a17548ced6fc5e44e8d7db791181f90e2d8f024c14c7765726d0face59e6c8797caf029f1a&scene=21#wechat_redirect)**：2022年Alexey Bochkovskiy\**和Chien-Yao Wang\**等人**
+说明： 本项目支持YOLOv8的对应的package的版本是：[ultralytics-8.3.0](https://pypi.org/project/ultralytics/8.0.0/)
 
 + **YOLOv8：2023年Ultralytics公司**
 
@@ -27,10 +11,7 @@
 ### 2. YOLOv8的相关资源
 
 + YOLOv8 Github: https://github.com/ultralytics/ultralytics
-
-+ ~~YOLOv8的权重：https://github.com/ultralytics/assets/releases~~
 + YOLOv8文档： https://v8docs.ultralytics.com/
-+ ~~YOLOv8 Python package源码库：https://test.pypi.org/simple/ultralytics/~~
 
 
 
